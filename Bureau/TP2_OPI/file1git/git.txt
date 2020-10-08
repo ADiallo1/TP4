@@ -1,0 +1,65 @@
+Exercice1
+4. comprendre le message
+git status "nous informe sur l'état de notre repertoire si on peut ajouter le s fichiers ou pas "
+<<Sur la branche master
+
+Aucun commit
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)>>
+
+
+5. git add 
+
+<<portable019@Portable-Polytech019:~$ git add Bureau/file1git
+portable019@Portable-Polytech019:~$ git status
+Sur la branche master
+
+Aucun commit
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier : Bureau/file1git/git.txt
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)>>
+
+6. le status de mon repertoire 
+
+<<portable019@Portable-Polytech019:~$ git commit -m"Un superMessage"
+[master (commit racine) efd4f76] Un superMessage
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Bureau/file1git/git.txt
+portable019@Portable-Polytech019:~$ git status
+Sur la branche master
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)>>
+
+8. "git log" 
+<<Nous donne des informations depuis notre Compte ses repertoire son contenu ainsi que la date de modification >>
+
+<<portable019@Portable-Polytech019:~$ git log -p
+commit efd4f764a050500a0a2a253ec0cf01f96687a176 (HEAD -> master)
+Author: ADiallo1 <abdbirrare@gmail.com>
+Date:   Thu Oct 8 11:42:45 2020 +0200
+
+    Un superMessage
+
+diff --git a/Bureau/file1git/git.txt b/Bureau/file1git/git.txt
+new file mode 100644
+index 0000000..8bd3c8f
+--- /dev/null
++++ b/Bureau/file1git/git.txt
+@@ -0,0 +1,3 @@
++Exercice1
++4. comprendre le message
++git status "nous informe sur l'état de notre repertoire si on peut ajouter le s fichiers ou pas ">>
+
+9. "git diff"
+
+<<lorsque le fichier est modifié il affiche son contenu ailleurs en rouge>>
+
+10."git push -u origin master"
+<< Je constate que mon travaille est ajouté directement dans mon espace de travaille git hub>>
+
