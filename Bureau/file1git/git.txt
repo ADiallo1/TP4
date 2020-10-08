@@ -1,0 +1,3 @@
+Exercice1
+4. comprendre le message
+git status "nous informe sur l'état de notre repertoire si on peut ajouter le s fichiers ou pas "
